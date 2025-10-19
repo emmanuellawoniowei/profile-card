@@ -1,12 +1,377 @@
 /* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-black: #0d0d0d;
+  --color-card-bg: #1a1a1a;    
+  --color-gold-text: #d4af37; /* text and headings */
+  --color-gold-shape: #c5a020; /* borders, buttons, lines */
+  --color-gold-accent: #ffd900e1; /* hover highlights */
+  --color-light-text: #e0e0e0;
+}
 
 /* Universal styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Desktop layout */
+
+/* Profile Card Styling */
+article {
+  max-width: 900px;
+  width: 100%;
+  padding: 30px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  border: 1px #ffffff2a solid;
+  transition: transform 18s ease, box-shadow 18s ease;
+}
+
+article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+article .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+/* Profile picture Styling */
+article .header figure img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: #c5a020 7px solid;
+  object-fit: cover;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* User styling */
+article .header .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article .header .user h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 40px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  color: #d4af37;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+article .header .user p {
+  color: #e0e0e0;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Current time styling */
+article .header .user .time-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+  background: #1a1a1a;
+  border: #ffd700 1px solid;
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+  padding: 10px 18px;
+  color: #e0e0e0;
+  font-family: "monospace", sans-serif;
+  font-size: 20px;
+  transition: all ease-in 0.5s;
+}
+
+/* Line styling */
+.line {
+  margin: 25px 0;
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 215, 0, 0.6);
+}
+
+/* Links styling */
+article .links {
+  text-align: center;
+}
+
+article .links h2 {
+  color: #fff;
+  font-family: 20px;
+  margin-bottom: 15px;
+}
+
+/* Social links styling */
+article .links .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+article .links .social li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #c5a020;
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+  height: 50px;
+  width: 180px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+article .links .social li a:hover {
+  background: #ffd900e1;
+  color: fff;
+}
+
+/* Hobbies and dislikes styling */
+article .lists {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+article .lists section {
+  text-align: left;
+  flex: 1;
+  min-width: 260px;
+  max-width: 350px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  border: 1px #ffd700 solid;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+  transition: all ease-in 0.5s;
+  padding: 15px 0 15px 60px;
+  color: #fff;
+  font-size: 20px;
+}
+
+article .lists section h3 {
+  color: #d4af37;
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+
+article .lists section li {
+  list-style-type: square;
+}
+
+
+
+/* Tablets layout */
+@media (max-width: 926px) {
+  /* Header */
+  article .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  /* User styling */
+  article .header .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article .header .user h2 {
+    font-size: 23.5px;
+  }
+
+  article .header .user p {
+    font-size: 18px;
+  }
+
+  /* Currrent time styling */
+  article .header .user .time-wrap {
+    font-size: 15px;
+  }
+
+  /* Social Links styling */
+  article .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  article .links h2 {
+    font-size: 25px;
+  }
+
+  article .links .social {
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+
+  article .social li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+   
+  /* Hobbies and dislikes styling */
+  article .lists {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+  }
+
+  article .lists section {
+    width: 100%;
+  }
+
+  article .lists section h3 {
+    font-size: 25px;
+  }    
+}
+
+
+
+/* Phones layout */
+@media (max-width: 706px) {
+  /* Article styling */
+  article {
+    padding: 40px 0;
+  }
+
+  /* Header styling */
+  article .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Profile Picture styling */
+  article .header figure img {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* User styling */
+  article .header .user h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  article .header .user p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+   
+  /* Currrent time styling */
+  article .header .user .time-wrap {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+
+  article .header .user .time-wrap .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+   
+  /* Social Links styling */
+  article .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  article .links .social {
+    flex-wrap: wrap;
+    padding: auto;
+  }
+
+  article .social li a {
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+   
+  /* Hobbies and dislikes styling */
+  article .lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  article .lists section {
+    max-width: 80px;
+    width: 100%;
+  }
+
+  article .lists section h3 {
+    font-size: 25px;
+  }
+}

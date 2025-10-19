@@ -11,64 +11,93 @@
 </head>
 
 <body>
+    <!-- Profile card -->
     <article data-testid="test-profile-card">
-        <!-- Profile Picture -->
-        <figure>
-            <img src="/profile-card/assets/profile-pic.png" alt="Profile Picture">
-        </figure>
+        <!-- Header -->
+        <div class="header">
+            <!-- Profile Picture -->
+            <figure>
+                <img src="/profile-card/assets/profile-pic.png" alt="Profile Picture">
+            </figure>
 
-        <!-- User name -->
-        <h2 data-testid="test-user-name" aria-label="User's Name">Emmanuella Woniowei</h2>
+            <!-- User -->
+            <div class="user">
+                <!-- User name -->
+                <h2 data-testid="test-user-name" aria-label="User's Name">EMMANUELLA WONIOWEI</h2>
 
-        <!-- Bio -->
-        <p data-testid="test-user-bio">
-            Frontend Developer crafting refined digital experiences with a clean code elegance and elegant design. Passionate about bringing creative visions to life.
-        </p>
+                <!-- Bio -->
+                <p data-testid="test-user-bio">
+                    Frontend Developer crafting refined digital experiences with a clean code elegance and elegant design. Passionate about bringing creative visions to life.
+                </p>
 
-        <!-- Current time -->
-        <time data-testid="test-user-time">TIME: 167888492012 MS</time>
+                <!-- Current time -->
+                <div class="time-wrap" aria-live="polite">
+                    Current time:
+                    <!-- Row -->
+                    <div class="row">
+                        <span data-testid="test-user-time" id="timeNow">0</span>
+                        <span>ms</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Line -->
+        <hr class="line">
 
         <!-- Social links -->
-        <ul data-testid="test-user-social-links" aria-label=" User's Social Media Links">
-            <!-- Twitter -->
-            <li>
-                <a href="https://x.com/tamsbaby_0630" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Visit Twitter profile"><i class="fa-brands fa-twitter"></i></a>
-            </li>
+        <div class="links">
+            <h2>Connect with me on:</h2>
+            <ul data-testid="test-user-social-links" aria-label=" User's Social Media Links" class="social">
+                <!-- Twitter -->
+                <li>
+                    <a href="https://x.com/tamsbaby_0630" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Visit Twitter profile"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                </li>
 
-            <!-- LinkedIn -->
-            <li>
-                <a href="https://www.linkedin.com/in/emmanuella-woniowei-512987374/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" aria-label="Visit LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
+                <!-- LinkedIn -->
+                <li>
+                    <a href="https://www.linkedin.com/in/emmanuella-woniowei-512987374/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" aria-label="Visit LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+                </li>
 
-            <!-- GitHub -->
-            <li>
-                <a href="https://github.com/emmanuellawoniowei" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="Visit GitHub profile"><i class="fa-brands fa-github"></i></a>
-            </li>
-        </ul>
+                <!-- GitHub -->
+                <li>
+                    <a href="https://github.com/emmanuellawoniowei" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="Visit GitHub profile"><i class="fa-brands fa-github"></i>GitHub</a>
+                </li>
+
+                <!-- FaceBook -->
+                <li>
+                    <a href="https://web.facebook.com/emmanuella.woniowei" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-facebook" aria-label="Visit FaceBook profile"><i class="fa-brands fa-facebook"></i>FaceBook</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Line -->
+        <hr class="line">
 
         <!-- Hobbies and dislikes -->
         <div class="lists">
             <!-- Hobbies Section -->
             <section data-testid="test-user-hobbies" aria-labelledby="hobbies-heading">
                 <h3>Hobbies</h3>
-                <ul class="items">
-                    <li>Designing elegant user interfaces</li>
-                    <li>Watching tech tutorials and exploring new tools</li>
-                    <li>Listening to calm music while coding</li>
-                    <li>Reading inspiring stories and self-development books</li>
-                    <li>Experimenting with color palettes and typography</li>
+                <ul>
+                    <li>Designing</li>
+                    <li>Coding</li>
+                    <li>Music</li>
+                    <li>Reading</li>
+                    <li>Exploring</li>
                 </ul>
             </section>
 
             <!-- Dislikes Section -->
             <section data-testid="test-user-dislikes" aria-labelledby="dislikes-heading">
-                <h5>Dislikes</h5>
-                <ul class="items">
+                <h3>Dislikes</h3>
+                <ul>
                     <li>Procrastination</li>
-                    <li>Poor communication</li>
-                    <li>Cluttered or messy code</li>
-                    <li>Unnecessary negativity</li>
-                    <li>Rushing creative work</li>
+                    <li>Negativity</li>
+                    <li>Clutter</li>
+                    <li>Distraction</li>
+                    <li>Rushing</li>
                 </ul>
             </section>
         </div>
