@@ -6,7 +6,7 @@ This project is a responsive profile card showcasing personal information, socia
 
 Here's a visual representation of the profile card:
 
-![Profile Card Demo](https://images.textcortex.com/v2-image-b33346f1-a182-4160-8025-b461427c515a.jpeg)
+![Profile Card Demo](/assets/demo.jpg)
 
 ## Table of Contents
 
