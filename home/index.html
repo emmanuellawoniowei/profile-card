@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Profile Card - HNG Stage 0 Task</title>
+</head>
+
+<body>
+    <!-- Profile card -->
+    <article data-testid="test-profile-card">
+        <!-- Header -->
+        <div class="header">
+            <!-- Profile Picture -->
+            <figure>
+                <img src="assets/profile-pic.png" alt="Profile Picture">
+            </figure>
+
+            <!-- User -->
+            <div class="user">
+                <!-- User name -->
+                <h2 data-testid="test-user-name" aria-label="User's Name">EMMANUELLA WONIOWEI</h2>
+
+                <!-- Bio -->
+                <p data-testid="test-user-bio">
+                    Frontend Developer crafting refined digital experiences with a clean code elegance and elegant design. Passionate about bringing creative visions to life.
+                </p>
+
+                <!-- Current time -->
+                <div class="time-wrap" aria-live="polite">
+                    Current time:
+                    <!-- Row -->
+                    <div class="row">
+                        <span data-testid="test-user-time" id="timeNow">0</span>
+                        <span>ms</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Line -->
+        <hr class="line">
+
+        <!-- Social links -->
+        <div class="links">
+            <h2>Connect with me on:</h2>
+            <ul data-testid="test-user-social-links" aria-label=" User's Social Media Links" class="social">
+                <!-- Twitter -->
+                <li>
+                    <a href="https://x.com/tamsbaby_0630" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Visit Twitter profile"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                </li>
+
+                <!-- LinkedIn -->
+                <li>
+                    <a href="https://www.linkedin.com/in/emmanuella-woniowei-512987374/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" aria-label="Visit LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+                </li>
+
+                <!-- GitHub -->
+                <li>
+                    <a href="https://github.com/emmanuellawoniowei" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="Visit GitHub profile"><i class="fa-brands fa-github"></i>GitHub</a>
+                </li>
+
+                <!-- FaceBook -->
+                <li>
+                    <a href="https://web.facebook.com/emmanuella.woniowei" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-facebook" aria-label="Visit FaceBook profile"><i class="fa-brands fa-facebook"></i>FaceBook</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Line -->
+        <hr class="line">
+
+        <!-- Hobbies and dislikes -->
+        <div class="lists">
+            <!-- Hobbies Section -->
+            <section data-testid="test-user-hobbies" aria-labelledby="hobbies-heading">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Designing</li>
+                    <li>Coding</li>
+                    <li>Music</li>
+                    <li>Reading</li>
+                    <li>Exploring</li>
+                </ul>
+            </section>
+
+            <!-- Dislikes Section -->
+            <section data-testid="test-user-dislikes" aria-labelledby="dislikes-heading">
+                <h3>Dislikes</h3>
+                <ul>
+                    <li>Procrastination</li>
+                    <li>Negativity</li>
+                    <li>Clutter</li>
+                    <li>Distraction</li>
+                    <li>Rushing</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
