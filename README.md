@@ -15,13 +15,13 @@ Here are visual representations of the profile card, about me page, and contact 
 -   [Features](#features)
 -   [Technologies Used](#technologies-used)
 -   [Installation](#installation)
--   [Usage](#usage)
 -   [Project Structure](#project-structure)
 -   [Pages & Functionality](#pages--functionality)
 -   [Customization](#customization)
 -   [Contributing](#contributing)
 -   [License](#license)
 -   [Contact](#contact)
+-   [Usage](#usage)
 
 ## Features
 
@@ -58,19 +58,6 @@ To get a local copy up and running, follow these simple steps:
     cd profile-card
     ```
 
-## Usage
-
-You can open any of the main HTML files in your web browser to view the respective pages. Navigation between pages should be available if implemented. No complex build process is required.
-
-```bash
-# To view the Profile Card:
-open profile/index.html
-
-# To view the Contact Us page:
-open contact-us/contact.html
-
-# To view the About Me page:
-open about-me/about.html
 
 ## Project Structure
 
@@ -139,3 +126,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 [Emmanuella Woniowei] - [wonioweiemmanuella@gmail.com]
 Project Link: [https://github.com/emmanuellawoniowei/profile-card](https://github.com/emmanuellawoniowei/profile-card)
+
+## Usage
+
+You can open any of the main HTML files in your web browser to view the respective pages. Navigation between pages should be available if implemented. No complex build process is required.
+
+```bash
+# To view the Profile Card:
+open profile/index.html
+
+# To view the Contact Us page:
+open contact-us/contact.html
+
+# To view the About Me page:
+open about-me/about.html
