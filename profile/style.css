@@ -5,7 +5,7 @@
 
 :root {
   --color-black: #0d0d0d;
-  --color-card-bg: #1a1a1a;    
+  --color-card-bg: #1a1a1a;
   --color-gold-text: #d4af37; /* text and headings */
   --color-gold-shape: #c5a020; /* borders, buttons, lines */
   --color-gold-accent: #ffd900e1; /* hover highlights */
@@ -41,15 +41,50 @@ a {
 
 /* Desktop layout */
 
+/* Header and Navigation */
+header {
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 94px rgba(0, 0, 0, 0.4);
+  margin: 30px 0 50px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  background-color: #222;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #d7aa0a86;
+}
+
+nav a.active {
+  background-color: #ffd900e1;
+}
+
 /* Profile Card Styling */
 article {
+  display: block;
   max-width: 900px;
   width: 100%;
   padding: 30px;
   background: #1a1a1a;
   border-radius: 20px;
   border: 1px #ffffff2a solid;
-  transition: transform 18s ease, box-shadow 18s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 article:hover {
@@ -209,6 +244,7 @@ article .lists section li {
 
 /* Tablets layout */
 @media (max-width: 926px) {
+
   /* Header */
   article .header {
     display: flex;
@@ -261,7 +297,7 @@ article .lists section li {
     flex-direction: row;
     align-items: center;
   }
-   
+
   /* Hobbies and dislikes styling */
   article .lists {
     display: flex;
@@ -278,13 +314,14 @@ article .lists section li {
 
   article .lists section h3 {
     font-size: 25px;
-  }    
+  }
 }
 
 
 
 /* Phones layout */
 @media (max-width: 706px) {
+
   /* Article styling */
   article {
     padding: 40px 0;
@@ -297,7 +334,7 @@ article .lists section li {
     align-items: center;
     justify-content: center;
   }
-  
+
   /* Profile Picture styling */
   article .header figure img {
     width: 180px;
@@ -314,7 +351,7 @@ article .lists section li {
     font-size: 18px;
     padding: 0 20px;
   }
-   
+
   /* Currrent time styling */
   article .header .user .time-wrap {
     padding: 15px 30px;
@@ -333,7 +370,7 @@ article .lists section li {
     justify-content: center;
     gap: 5px;
   }
-   
+
   /* Social Links styling */
   article .links {
     display: flex;
@@ -354,7 +391,7 @@ article .lists section li {
     flex-direction: row;
     align-items: center;
   }
-   
+
   /* Hobbies and dislikes styling */
   article .lists {
     display: flex;
