@@ -15,7 +15,6 @@ Here are visual representations of the profile card, about me page, and contact 
 -   [Features](#features)
 -   [Technologies Used](#technologies-used)
 -   [Installation](#installation)
--   [Project Structure](#project-structure)
 -   [Pages & Functionality](#pages--functionality)
 -   [Customization](#customization)
 -   [Contributing](#contributing)
@@ -58,8 +57,6 @@ To get a local copy up and running, follow these simple steps:
     cd profile-card
     ```
 
-
-## Project Structure
 
 ## Pages & Functionality
 
