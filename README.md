@@ -2,11 +2,13 @@
 
 This project has evolved from a single responsive profile card into a multi-page application. It now includes a "Contact Us" page with robust form validation and an "About Me" page for personal reflection, alongside the original profile card. The entire application maintains a sleek, dark-themed design with elegant gold accents, and showcases responsive design principles.
 
-## Demo
+## Demos
 
-Here's a visual representation of the original profile card. Demos for the new pages will be added as they are finalized.
+Here are visual representations of the profile card, about me page, and contact us page:
 
-![Profile Card Demo](/assets/demo.jpg)
+-   **Profile Card Demo:** ![Profile Card Demo](/assets/profile-demo.jpg)
+-   **About Me Page Demo:** ![About Me Page Demo](/assets/about-me-demo.png)    
+-   **Contact Us Page Demo:** ![Contact Us Page Demo](/assets/contact-us-demo.png)  
 
 ## Table of Contents
 
@@ -58,7 +60,14 @@ To get a local copy up and running, follow these simple steps:
 
 ## Usage
 
-Simply open the `index.html` file in your web browser to view the main Profile Card page. From there, you can navigate to the "Contact Us" and "About Me" pages via your implemented navigation. No complex build process is required.
+You can open any of the main HTML files in your web browser to view the respective pages. Navigation between pages should be available if implemented. No complex build process is required.
 
 ```bash
+# To view the Profile Card:
 open profile/index.html
+
+# To view the Contact Us page:
+open contact-us/contact.html
+
+# To view the About Me page:
+open about-me/about.html
