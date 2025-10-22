@@ -22,7 +22,7 @@
 /* Body Styling */
 body {
     min-height: 100vh;
-    background-color: #0d0d0d;
+    background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,34 +41,72 @@ a {
 
 /* Header and Navigation */
 header {
-  color: #fff;
-  text-align: center;
-  box-shadow: 0 8px 94px rgba(0, 0, 0, 0.4);
-  margin: 30px 0 50px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 94px rgba(0, 0, 0, 0.4);
+    margin: 30px 0 50px;
 }
 
 nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 nav a {
-  background-color: #222;
-  color: #fff;
-  font-weight: 600;
-  padding: 12px 15px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease-in;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in;
 }
 
 nav a:hover,
 nav a:focus {
-  background-color: #d7aa0a86;
+    background-color: #2a2a2a;
 }
 
 nav a.active {
-  background-color: #ffd900e1;
+    background-color: #F5C542;
+}
+
+/* Main Styling */
+main {
+    display: block;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    border: 1px #ffffff2a solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+main h1 {
+    color: #F5C542;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 45px;
+}
+
+main h2 {
+    color: #F5C542;
+    font-size: 27px;
+    margin: 25px 0 0;
+}
+
+main p {
+    color:  #e5e5e5;
+    font-size: 16px;
+    word-wrap: wrap;
+    line-height: 2.5;
+    text-align: justify;
 }
