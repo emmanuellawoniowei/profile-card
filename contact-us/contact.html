@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Contact Us</title>
 </head>
+
 <body>
     <header>
         <nav aria-label="Main navigation">
@@ -18,8 +20,47 @@
         </nav>
     </header>
 
-   
+    <main>
+        <form id="contact-form" novalidate>
+            <h1>Get In Touch</h1>
 
-    <script src="about.js"></script>
+            <!-- Full Name -->
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" data-testid="test-contact-name" aria-describedby="error-name" required>
+                <p id="error-name" data-testid="test-contact-error-name" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Email Address -->
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" data-testid="test-contact-email" aria-describedby="error-email" required>
+                <p id="error-email" data-testid="test-contact-error-email" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Subject -->
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" data-testid="test-contact-subject" aria-describedby="error-subject" required>
+                <p id="error-subject" data-testid="test-contact-error-subject" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Message -->
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" data-testid="test-contact-message" aria-describedby="error-message" required></textarea>
+                <p id="error-message" data-testid="test-contact-error-message" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Send message btn -->
+            <button type="submit" data-testid="test-contact-submit">Send Message</button>
+
+            <!-- Success -->
+            <p id="success" data-testid="test-contact-success" class="success" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <script src="contact.js"></script>
 </body>
+
 </html>

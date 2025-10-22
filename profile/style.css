@@ -23,7 +23,7 @@
 body {
   min-height: 100vh;
   background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
-  display: flex;    
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -58,7 +58,8 @@ nav ul {
 }
 
 nav a {
-  background-color: #222;
+  display: block;
+  background-color: #1c1c1c;
   color: #fff;
   font-weight: 600;
   padding: 12px 15px;
@@ -68,11 +69,11 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  background-color: #d7aa0a86;
+  background-color: #2a2a2a;
 }
 
 nav a.active {
-  background-color: #ffd900e1;
+  background-color: #F5C542;
 }
 
 /* Profile Card Styling */
@@ -318,6 +319,15 @@ article .lists section li {
 }
 
 
+@media (max-width: 768px) {
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 
 /* Phones layout */
 @media (max-width: 706px) {
@@ -410,5 +420,14 @@ article .lists section li {
 
   article .lists section h3 {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -5,8 +5,8 @@
 
 :root {
     --color-black: #0d0d0d;
-    --color-card-bg: #1a1a1a;
-    --color-gold-text: #d4af37; /* text and headings */
+    --color-form-bg: #111111;
+    --color-gold-text: #FFD700; /* headings */
     --color-gold-shape: #c5a020; /* borders, buttons, lines */
     --color-gold-accent: #ffd900e1; /* hover highlights */
     --color-light-text: #e0e0e0;
@@ -22,7 +22,7 @@
 /* Body Styling */
 body {
     min-height: 100vh;
-    background-color: #0d0d0d;
+    background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,34 +41,172 @@ a {
 
 /* Header and Navigation */
 header {
-  color: #fff;
-  text-align: center;
-  box-shadow: 0 8px 94px rgba(0, 0, 0, 0.4);
-  margin: 30px 0 50px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 94px rgba(0, 0, 0, 0.4);
+    margin: 30px 0 50px;
 }
 
 nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 nav a {
-  background-color: #222;
-  color: #fff;
-  font-weight: 600;
-  padding: 12px 15px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease-in;
+    display: block;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in;
 }
 
 nav a:hover,
 nav a:focus {
-  background-color: #d7aa0a86;
+    background-color: #2a2a2a;
 }
 
 nav a.active {
-  background-color: #ffd900e1;
+    background-color: #F5C542;
+}
+
+/* Main Styling */
+main {
+    display: block;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    border: 1px #ffffff2a solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Form styling */
+main form {
+    background: #111111; 
+    padding: 32px;
+    border-radius: 20px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); 
+    border: 1px solid #222222; 
+}
+
+main form h1 {
+    text-align: center;
+    color: #FFD700; 
+    margin-bottom: 24px;
+    font-size: 45px; 
+    letter-spacing: 1px; 
+}
+
+main form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #C0C0C0; 
+    font-size: 18px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background: #1C1C1C; 
+    color: #F0F0F0; 
+    font-size: 17px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: vertical;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #FFD700; 
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.4); 
+}
+
+button {
+    width: 100%;
+    padding: 16px; 
+    background: #FFD700; 
+    color: #111111; 
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+button:hover,
+button:focus {
+    background: #E0B500; 
+    color: #000000; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.4); 
+}
+
+.error {
+    color: #FF6347; 
+    font-size: 13px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.success {
+    color: #4CAF50; 
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Tablet Layout */
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Mobile  Layouts*/
+@media (max-width: 480px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main form h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    main form h1 {
+        font-size: 30px;
+    }
 }
